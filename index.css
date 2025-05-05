@@ -1,0 +1,187 @@
+:root {
+    --color-verde: #0CD664;
+    --color-gris: #31373F;
+    --color-azul-oscuro: #1F262F;
+    
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--color-azul-oscuro);
+    /* overflow-x: hidden; */
+     user-select: none;
+}
+/* header */
+header{
+    background-color: var(--color-gris);
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 70px;
+    padding: 0 50px 0 50px;
+    z-index: 1000;
+}
+header img{
+    width: 200px;
+}
+header button{
+    background-color: var(--color-verde);
+    height: 45px;
+    border: none;
+    outline: none;
+    margin: 0 10px 0 10px;
+    color: white;
+    /* font-weight: 500; */
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+    box-shadow: 0px 0px 20px var(--color-verde);
+}
+@keyframes buttonHeader {
+    0%   { transform: scale(1); }
+    50%  { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+header button:hover{
+    cursor: pointer;
+    background-color: var(--color-gris);
+    border: 1px solid var(--color-verde);
+}
+.conteiner2{
+    /* background-color: red; */
+    display: flex;
+}
+.buttonWhatsapp{
+    width: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    animation-name: buttonHeader;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.buttonRegistrarse{
+    width: 150px;
+    border-radius: 10px;
+    animation-name: buttonHeader;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+/* fin header */
+
+/* carrousel */
+ .conteinerCarrousel{
+    /* background-color: red; */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+ }
+ .carrousel{
+    /* background-color: blue; */
+    width: 90%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+ }
+ .carousel img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit:cover;
+ }
+ .carousel{
+    /* background-color: red; */
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+ }
+ .carousel-inner{
+    /* background-color: green; */
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+ }
+ .carousel-item {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit:cover;
+ }
+ .arrowNext, .arrowPrev {
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 10; 
+    /* background-color: red; */
+  }
+  .arrowPrev {
+    left: 15px;
+  }
+  
+  .arrowNext {
+    right: 15px;
+  }
+  .imagePrincipal {
+  }
+  
+ /* fin carrousel */
+
+
+ /* media queries */
+ @media (max-width: 600px) {
+    header{
+        padding: 0 10px 0 10px;
+    }
+    header img{
+        width: 50%;
+        min-width: 150px;
+    }
+    header button{
+        font-size: 12px;
+    }
+    button.buttonRegistrarse{
+        width: 100px;
+    }
+  }
+
+  @media (max-width: 370px) {
+    header button{
+        font-size: 10px;
+        margin: 3px;
+        height: 30px;
+        width: 100px;
+    }
+    .conteiner2{
+        flex-direction: column;
+    }
+    button.buttonRegistrarse{
+        /* width: 100px; */
+    }
+    .buttonWhatsapp{
+        width: 100px;
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        order: 2;
+    }
+    .buttonWhatsapp svg{
+        width: 20px;
+    }
+    .buttonRegistrarse{
+        order: 1;
+    }
+  }
+  /* finmedia queries */
