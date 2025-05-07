@@ -141,7 +141,7 @@ header button:hover{
     font-size: 22px;
     margin-bottom: 20px;
   }
-  .glide__slide{
+  .conteinerSlider .glide__slide{
     /* background-color: red; */
     display: flex;
     justify-content: center;
@@ -149,14 +149,15 @@ header button:hover{
     /* width: 100%; */
     /* height: 100%; */
   }
-  .glide__slide img{
+  .conteinerSlider .glide__slide img{
     width: 160px;
   }
-  .glide__arrows button{
+  .conteinerSlider .glide__arrows button{
     /* background-color: red; */
     border: none;
+    box-shadow: none;
   }
-  .glide__arrows button svg{
+  .conteinerSlider .glide__arrows button svg{
     width: 30px;
     height: 30px;
     /* color: white; */
@@ -182,13 +183,13 @@ header button:hover{
     background-image: url('./assets/img/fondo-juegos.webp');
     background-size: cover;
     background-position: center;
-    filter: blur(2px);
+    filter: blur(3px);
     z-index: -1; /* se pone detrás del contenido */
   }
 .subConteinerBanner3{
     width: 100vw;
     height: 100vh;
-    background-color: rgba(56, 56, 56, 0.275);
+    background-color: #1f262f64;
     z-index: 100;
     color: white;
     display: flex;
@@ -237,7 +238,63 @@ header button:hover{
 
  /* fin banner 3 */
 
+    /* slider 2 */
+    .conteinerSlider2{
+        background-color: var(--color-azul-oscuro);
+        /* background: linear-gradient(180deg, #0CD664 0%, #2EA060 100%); */
+        /* box-shadow: 0px 0px 25px var(--color-verde); */
+        width: 100vw;
+        max-width: 100vw;
+        height: 230px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* margin: 20px 0 0px 0; */
+        padding: 20px 10% 20px 10%; 
+        z-index: 300;
+        position: relative;
+    }
+    .conteinerSlider2 p{
+        color: white;
+        margin: 30px;
+        text-align: center;
+    }
+    .conteinerSlider2 a{
+        color: var(--color-verde);
+        text-decoration:underline;
+    }
+     /* .conteinerSlider2 h3{
+        color: white;
+        font-size: 22px;
+        margin-bottom: 20px;
+      } */
+        .glide__track2{
+            /* background-color: red; */
+            width: 800px;
+        }
+        
+    .glide__slide2{
+        /* background-color: yellow; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+      }
+      .glide__slide2 img{
+        width: 130px;
+      }
+
+    /* fin slider 2 */
+
  /* media queries */
+ @media (max-width: 600px) {
+    .glide__track2{
+        /* background-color: red; */
+        width: 100vw;
+    }
+ }
  @media (max-width: 600px) {
     header{
         padding: 0 10px 0 10px;
@@ -255,6 +312,12 @@ header button:hover{
     .glide__slide img{
         width: 140px;
       }
+      .subConteinerBanner3{
+        padding: 20px;
+      }
+    .subConteinerBanner3 h1{
+        font-size: 30px;
+    }
   }
 
   @media (max-width: 370px) {
