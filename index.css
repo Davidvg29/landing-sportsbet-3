@@ -288,6 +288,67 @@ header button:hover{
 
     /* fin slider 2 */
 
+    /* banner whastapp */
+     .containerBannerWhatsapp{
+        background: linear-gradient(180deg, #0CD664 0%, #2EA060 100%);
+        box-shadow: 0px 0px 25px var(--color-verde);
+        width: 100vw;
+        height: auto;
+        max-height: 450px;
+        z-index: 400;
+        position: relative;
+        padding: 50px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+     }
+     .containerBannerWhatsapp svg{
+        width: 100px;
+        margin: 15px 0 15px 0;
+        animation-name: logoBannerWhatsapp;
+        animation-duration: .5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+     }
+     .containerBannerWhatsapp h3{
+        font-size: 42px;
+        margin: 15px 0 15px 0;
+     }
+     .containerBannerWhatsapp a{
+        background-color: white;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        width: 150px;
+        height: 40px;
+        border-radius: 10px;
+        color: var(--color-verde);
+        font-weight: 600;
+        font-size: 16px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        margin: 15px 0 15px 0;
+    }
+     .containerBannerWhatsapp a:hover{
+        color: white;
+        background-color: rgba(255, 0, 0, 0);
+        border: 1px solid white;
+        cursor: pointer;
+        transform: scale(1.1);
+        text-decoration: none;
+    }
+    @keyframes logoBannerWhatsapp {
+        0%   { transform: rotate(0deg); }
+        25%  { transform: rotate(-10deg); }
+        50%  { transform: rotate(10deg); }
+        75%  { transform: rotate(-3deg); }
+        100% { transform: rotate(0deg); }
+      }
+      
+    /* fin banner whatsapp */
+
  /* media queries */
  @media (max-width: 600px) {
     .glide__track2{
@@ -318,6 +379,12 @@ header button:hover{
     .subConteinerBanner3 h1{
         font-size: 30px;
     }
+    .containerBannerWhatsapp{
+        padding: 20px;
+    }
+    .containerBannerWhatsapp h3{
+        font-size: 30px;
+     }
   }
 
   @media (max-width: 370px) {
