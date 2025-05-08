@@ -398,9 +398,72 @@ header button:hover{
         border: 1px solid var(--color-verde);
         animation-play-state: paused;
     }
-    
       /* banner 4 */
 
+      /* banner 5 */
+       .containerBanner5{
+        /* background-color: red; */
+        background-image: url(./assets/img/banner-gral-deportes-Desktop-21.webp);
+        background-repeat: repeat-x;
+        background-size: 200%;
+        background-position: center;
+        position: relative;
+        overflow: hidden;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 50px;
+        color: white;
+       }
+       .containerBanner5::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.5); /* cambia opacidad según quieras */
+        z-index: 100;
+        
+        backdrop-filter: blur(2px);
+      }
+       .containerBanner5 h2{
+        font-size: 40px;
+        margin: 20px 0 20px 0;
+        z-index: 150;
+       }
+       .containerBanner5 p{
+        z-index: 150;
+       }
+       .containerBanner5 a{
+        background-color: var(--color-verde);
+        width: 180px;
+        height: 45px;
+        border: none;
+        border-radius: 10px;
+        outline: none;
+        margin: 0 10px 0 10px;
+        color: white;
+        /* font-weight: 500; */
+        /* font-size: 16px; */
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        /* box-shadow: 0px 0px 20px var(--color-verde); */
+        animation-name: buttonBanner3;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        z-index: 150;
+    }
+    .containerBanner5 a:hover{
+        background-color: rgba(255, 0, 0, 0);
+        border: 1px solid var(--color-verde);
+        animation-play-state: paused;
+    }
+       /* fin banner 5 */
       
  /* media queries */
  @media (max-width: 600px) {
@@ -448,6 +511,18 @@ header button:hover{
      .containerBanner4 .number{
         font-size: 20vw;
      }
+     .containerBanner5{
+        /* background-color: red; */
+        /* background-image: url(./assets/img/banner-gral-deportes-Desktop-21.webp); */
+        background-repeat: no-repeat;
+        background-size: cover;
+     }
+     .containerBanner5{
+        padding-left: 20px;
+     }
+     .containerBanner5 h2{
+        font-size: 30px;
+    }
   }
 
   @media (max-width: 370px) {

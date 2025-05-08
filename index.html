@@ -144,6 +144,14 @@
       </div>
       <!-- fin  Banner 4 -->
 
+      <!-- banner 5  -->
+       <div class="containerBanner5">
+          <h2>Contamos con la red más amplia de apuestas deportivas</h2>
+          <p>Fútbol, Basketball, Tenis, Rugby, Volleyball, ESports, ¡y muchísimo más!</p>
+          <a href="">¡QUIERO JUGAR!</a>
+        </div>
+      <!-- fin banner 5 -->
+
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script>
         const config = {
@@ -188,6 +196,12 @@
             }
         }
         new Glide('.glide2', config2).mount()
+
+        window.addEventListener('scroll', function () {
+          const banner = document.querySelector('.containerBanner5');
+          const scrollX = window.scrollY;
+          banner.style.backgroundPosition = `${-scrollX * 0.3}px center`;
+        });
     </script>
      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
