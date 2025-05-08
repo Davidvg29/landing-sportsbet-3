@@ -349,6 +349,59 @@ header button:hover{
       
     /* fin banner whatsapp */
 
+      /* banner 4 */
+      .containerBanner4{
+        background-image: url(./assets/img/fondo-patron.webp);
+        background-size: cover;
+        width: 100vw;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        text-align: center;
+      }
+      .containerBanner4 .number{
+        font-size: 150px;
+        font-weight: 700;
+        color: var(--color-verde);
+      }
+      .containerBanner4 .tercerH2 b{
+        color: var(--color-verde);
+      }
+      .containerBanner4 a{
+        background-color: var(--color-verde);
+        width: 180px;
+        height: 45px;
+        border: none;
+        border-radius: 10px;
+        outline: none;
+        margin: 0 10px 0 10px;
+        color: white;
+        /* font-weight: 500; */
+        /* font-size: 16px; */
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        /* box-shadow: 0px 0px 20px var(--color-verde); */
+        animation-name: buttonBanner3;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+    }
+    .containerBanner4 a:hover{
+        background-color: rgba(255, 0, 0, 0);
+        border: 1px solid var(--color-verde);
+        animation-play-state: paused;
+    }
+    
+      /* banner 4 */
+
+      
  /* media queries */
  @media (max-width: 600px) {
     .glide__track2{
@@ -384,6 +437,16 @@ header button:hover{
     }
     .containerBannerWhatsapp h3{
         font-size: 30px;
+     }
+     .containerBanner4{
+        background-size: auto;
+        background-repeat: no-repeat;
+     }
+     .containerBanner4 h2{
+        font-size: 25px;
+     }
+     .containerBanner4 .number{
+        font-size: 20vw;
      }
   }
 
