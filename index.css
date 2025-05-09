@@ -502,8 +502,30 @@ header button:hover{
     color: var(--color-verde);
     margin: 20px 0 20px 0;
 }
-
     /* fin cards */
+
+/* footer */
+ footer{
+    background-color: var(--color-gris);
+    width: 100vw;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ footer img{
+    width: 800px;
+ }
+ footer p{
+    color:  white;
+    font-size: 12px;
+    margin: 20px 0 20px 0;
+    padding: 40px 0 40px 0;
+    border-top: 1px solid white;
+ }
+/* fin footer */
+
 
  /* media queries */
   @media (max-width: 1024px) {
@@ -511,6 +533,10 @@ header button:hover{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);
   }
+    footer img{
+        width: 100%;
+  }
+}
  @media (max-width: 600px) {
     .glide__track2{
         /* background-color: red; */
@@ -583,6 +609,9 @@ header button:hover{
     }
     .card p{
         font-size: 14px;
+    }
+    footer{
+        padding: 20px;
     }
   }
 
