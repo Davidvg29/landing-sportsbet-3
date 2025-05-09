@@ -465,6 +465,30 @@ header button:hover{
     }
        /* fin banner 5 */
       
+    /* cards */
+    .containerCards{
+        width: 100%;
+        background-color: red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* flex-wrap: wrap; */
+        padding: 50px;
+
+    }
+    .cards1 .cards2{
+        background-color: green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        width: 300px;
+        height: 200px;
+        margin: 10px;
+    }
+    /* fin cards */
+
  /* media queries */
  @media (max-width: 600px) {
     .glide__track2{
