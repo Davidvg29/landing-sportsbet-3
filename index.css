@@ -526,6 +526,44 @@ header button:hover{
  }
 /* fin footer */
 
+/* codigo qr */
+ .containerQr{
+    /* background-color: red; */
+    position: fixed;
+    right: 5%;
+    bottom: 15%;
+    z-index: 1500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation-name: animationQr;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-timing-function: ease-out;
+    /* animation-iteration-count: initial; */
+    animation-fill-mode: both;
+}
+ .containerQr p{
+    color: white;
+    font-size: 32px;
+    color: var(--color-verde);
+    font-weight: 800;
+    text-shadow: 2px 2px 1px white;
+ }
+ .containerQr img{
+    width: 200px;
+ }
+ 
+@keyframes animationQr {
+    0%   { bottom: -50%; }
+    50%  { bottom: 25%; }  /* sube más de lo necesario */
+    70%  { bottom: 10%; }  /* baja un poco de más */
+    85%  { bottom: 17%; }  /* sube un poco */
+    100% { bottom: 15%; }  /* se acomoda */
+}
+
+ /* fin codigo qr */
 
  /* media queries */
   @media (max-width: 1024px) {
@@ -599,7 +637,7 @@ header button:hover{
         font-size: 30px;
     }
     .containerCards{
-        padding: 10px;
+        padding: 50px 10px 50px 10px;
     }
     .card{
         padding: 10px;
@@ -641,6 +679,7 @@ header button:hover{
     }
     .buttonWhatsapp svg{
         width: 20px;
+        /* z-index: 400; */
     }
     .buttonRegistrarse{
         order: 1;
