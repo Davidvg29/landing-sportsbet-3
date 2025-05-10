@@ -620,10 +620,10 @@ header a:hover{
         width: 50%;
         min-width: 150px;
     }
-    header button{
+    header a{
         font-size: 12px;
     }
-    button.buttonRegistrarse{
+    a.buttonRegistrarse{
         width: 100px;
     }
     .conteinerSlider{
@@ -635,6 +635,7 @@ header a:hover{
       }
       .glide__slide3 img{
         width: 100%;
+        object-fit: cover;
       }
       .subConteinerBanner3{
         padding: 20px;
