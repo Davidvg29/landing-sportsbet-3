@@ -1,3 +1,11 @@
+/* glide.theme.min.css */
+ .glide__arrow{position:absolute;display:block;top:50%;z-index:2;color:#fff;text-transform:uppercase;padding:9px 12px;background-color:transparent;border:2px solid rgba(255,255,255,.5);border-radius:4px;box-shadow:0 .25em .5em 0 rgba(0,0,0,.1);text-shadow:0 .25em .5em rgba(0,0,0,.1);opacity:1;cursor:pointer;transition:opacity 150ms ease,border 300ms ease-in-out;transform:translateY(-50%);line-height:1}.glide__arrow:focus{outline:none}.glide__arrow:hover{border-color:#fff}.glide__arrow--left{left:2em}.glide__arrow--right{right:2em}.glide__arrow--disabled{opacity:.33}.glide__bullets{position:absolute;z-index:2;bottom:2em;left:50%;display:inline-flex;list-style:none;transform:translateX(-50%)}.glide__bullet{background-color:rgba(255,255,255,.5);width:9px;height:9px;padding:0;border-radius:50%;border:2px solid transparent;transition:all 300ms ease-in-out;cursor:pointer;line-height:0;box-shadow:0 .25em .5em 0 rgba(0,0,0,.1);margin:0 .25em}.glide__bullet:focus{outline:none}.glide__bullet:hover,.glide__bullet:focus{border:2px solid #fff;background-color:rgba(255,255,255,.5)}.glide__bullet--active{background-color:#fff}.glide--swipeable{cursor:grab;cursor:-moz-grab;cursor:-webkit-grab}.glide--dragging{cursor:grabbing;cursor:-moz-grabbing;cursor:-webkit-grabbing}/*# sourceMappingURL=glide.theme.min.css.map */
+/* fin glide.theme.min.css */
+
+/* glide.core.min.css */
+.glide{position:relative;width:100%;box-sizing:border-box}.glide *{box-sizing:inherit}.glide__track{overflow:hidden}.glide__slides{position:relative;width:100%;list-style:none;backface-visibility:hidden;transform-style:preserve-3d;touch-action:pan-Y;overflow:hidden;margin:0;padding:0;white-space:nowrap;display:flex;flex-wrap:nowrap;will-change:transform}.glide__slides--dragging{user-select:none}.glide__slide{width:100%;height:100%;flex-shrink:0;white-space:normal;user-select:none;-webkit-touch-callout:none;-webkit-tap-highlight-color:transparent}.glide__slide a{user-select:none;-webkit-user-drag:none;-moz-user-select:none;-ms-user-select:none}.glide__arrows{-webkit-touch-callout:none;user-select:none}.glide__bullets{-webkit-touch-callout:none;user-select:none}.glide--rtl{direction:rtl}/*# sourceMappingURL=glide.core.min.css.map */
+/* fin glide.core.min.css */
+
 :root {
     --color-verde: #0CD664;
     --color-gris: #31373F;
@@ -29,7 +37,7 @@ header{
 header img{
     width: 200px;
 }
-header button{
+header a{
     background-color: var(--color-verde);
     height: 45px;
     border: none;
@@ -40,13 +48,17 @@ header button{
     font-size: 16px;
     font-family:Arial, Helvetica, sans-serif;
     box-shadow: 0px 0px 20px var(--color-verde);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 @keyframes buttonHeader {
     0%   { transform: scale(1); }
     50%  { transform: scale(1.1); }
     100% { transform: scale(1); }
 }
-header button:hover{
+header a:hover{
     cursor: pointer;
     background-color: var(--color-gris);
     border: 1px solid var(--color-verde);
@@ -79,45 +91,63 @@ header button:hover{
     /* background-color: red; */
     width: 100vw;
     height: 100vh;
+    padding: 90px 80px 0px 80px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 80px;
- }
+}
  .carrousel{
     /* background-color: blue; */
-    width: 90%;
+    width: 100%;
     height: 100%;
-    border-radius: 20px;
-    display: flex;
+    /* border-radius: 30px; */
+     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
  }
- .carousel img{
+ .glide__track3{
     width: 100%;
     height: 100%;
-    border-radius: 20px;
-    object-fit:cover;
  }
- .carousel{
-    /* background-color: red; */
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
- }
- .carousel-inner{
+ .glide3{
     /* background-color: green; */
     width: 100%;
     height: 100%;
-    border-radius: 20px;
- }
- .carousel-item {
+}
+.glide__slides3{
+    /* background-color: yellow; */
     width: 100%;
     height: 100%;
-    border-radius: 20px;
-    object-fit:cover;
- }  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.glide__slide3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+ }
+.glide__arrows3{
+    /* background-color: red; */
+    /* width: 30px; */
+    /* height: 30px; */
+  }
+ .glide__arrows3 svg{
+    width: 30px;
+    border: none;
+ }
+ .glide__arrows3 button{
+    border: none;
+    /* background-color: red; */
+     box-shadow: none;
+ }
+ .glide__arrow--left3{
+    margin-left: 5%;
+ }
+ .glide__arrow--right3{
+    margin-right: 5%;
+ }
  /* fin carrousel */
 
  /* slider */
@@ -602,6 +632,9 @@ header button:hover{
     .glide__slide img{
         width: 140px;
       }
+      .glide__slide3 img{
+        width: 100%;
+      }
       .subConteinerBanner3{
         padding: 20px;
       }
@@ -666,6 +699,16 @@ header button:hover{
     text-shadow: 1px 1px 1px white;
  
     }
+    .conteinerCarrousel{
+        /* background-color: red; */
+        padding: 90px 10px 0px 10px;
+    }
+    .glide__arrow--left3{
+    margin-left: 0%;
+ }
+ .glide__arrow--right3{
+    margin-right: 0%;
+ }
   }
 
   @media (max-width: 370px) {
@@ -677,16 +720,17 @@ header button:hover{
     }
     .conteiner2{
         flex-direction: column;
-    }
-    button.buttonRegistrarse{
-        /* width: 100px; */
+        /* justify-content: space-between; */
+        /* align-items: center; */
     }
     .buttonWhatsapp{
-        width: 100px;
-        padding: 15px;
+        width: 100%;
+        height: 30px;
+        /* padding: 15px; */
         display: flex;
         justify-content: center;
         order: 2;
+        margin: 2px;
     }
     .buttonWhatsapp svg{
         width: 20px;
@@ -694,6 +738,11 @@ header button:hover{
     }
     .buttonRegistrarse{
         order: 1;
+        width: 100%;
+        height: 30px;
+        /* padding: 15px; */
+         margin: 2px;
+         font-size: 12px;
     }
     .conteinerSlider{
         margin: 20px 0 0px 0;
@@ -702,6 +751,9 @@ header button:hover{
      .glide__slide img{
         width: 100px;
         margin: 5px;
+      }
+      .glide__slide3 img{
+        width: 100%;
       }
      .conteinerSlider .glide__slide img{
         width: 120px;
