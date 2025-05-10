@@ -561,45 +561,6 @@ header a:hover{
  }
 /* fin footer */
 
-/* codigo qr */
- .containerQr{
-    /* background-color: red; */
-    position: fixed;
-    right: 5%;
-    bottom: 15%;
-    z-index: 1500;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    animation-name: animationQr;
-    animation-duration: 1s;
-    animation-delay: 2s;
-    animation-timing-function: ease-out;
-    /* animation-iteration-count: initial; */
-    animation-fill-mode: both;
-}
- .containerQr p{
-    color: white;
-    font-size: 32px;
-    color: var(--color-verde);
-    font-weight: 800;
-    text-shadow: 2px 2px 1px white;
- }
- .containerQr img{
-    width: 200px;
- }
- 
-@keyframes animationQr {
-    0%   { bottom: -50%; }
-    50%  { bottom: 25%; }  /* sube más de lo necesario */
-    70%  { bottom: 10%; }  /* baja un poco de más */
-    85%  { bottom: 17%; }  /* sube un poco */
-    100% { bottom: 15%; }  /* se acomoda */
-}
-
- /* fin codigo qr */
-
  /* media queries */
   @media (max-width: 1024px) {
     .containerCards {
@@ -610,12 +571,6 @@ header a:hover{
         width: 100%;
   }
 }
- @media (max-width: 600px) {
-    .glide__track2{
-        /* background-color: red; */
-        width: 100vw;
-    }
- }
  @media (max-width: 600px) {
     header{
         padding: 0 10px 0 10px;
@@ -637,6 +592,9 @@ header a:hover{
     .glide__slide img{
         width: 140px;
       }
+      .glide__track2{
+        width: 100vw;
+    }
       .glide__slide3 img{
         width: 100%;
         object-fit: cover;
@@ -693,17 +651,6 @@ header a:hover{
     }
     footer{
         padding: 20px;
-    }
-     .containerQr img{
-        width: 150px;
-    }
-    .containerQr p{
-        color: white;
-        font-size: 18px;
-        color: var(--color-verde);
-    /* font-weight: 800; */
-    text-shadow: 1px 1px 1px white;
- 
     }
     .conteinerCarrousel{
         /* background-color: red; */
