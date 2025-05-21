@@ -55,12 +55,12 @@
           <div class="glide3">
             <div class="glide__track glide__track3" data-glide-el="track">
                 <ul class="glide__slides glide__slides3">
-                    <li class="glide__slide glide__slide3"><img src="./assets/img/carrousel/mobile/Bienvenida_Mobile.jpg" alt=""></li>
+                      <li class="glide__slide glide__slide3"><img src="./assets/img/carrousel/mobile/Bienvenida_Mobile.jpg" alt=""></li>
               <li class="glide__slide glide__slide3"><img src="./assets/img/carrousel/mobile/Peugeot_Mobile.jpg" alt=""></li>
               <li class="glide__slide glide__slide3"><img src="./assets/img/carrousel/mobile/SPORTSBET-JUGA-Y-GANA-LANDING-MOBILE.jpg" alt=""></li>
               <li class="glide__slide glide__slide3"><img src="./assets/img/carrousel/mobile/SPORTSBET-WSP-HABILITADO-LANDING-MOBILE.jpg" alt=""></li>
               <li class="glide__slide glide__slide3"><img src="./assets/img/carrousel/mobile/TV_Mobile.jpg" alt=""></li>
-                  </ul>
+                </ul>
             </div>
             <div class="glide__arrows glide__arrows3" data-glide-el="controls">
                 <button class="glide__arrow glide__arrow--left glide__arrow--left3" data-glide-dir="<"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M14.2893 5.70708C13.8988 5.31655 13.2657 5.31655 12.8751 5.70708L7.98768 10.5993C7.20729 11.3805 7.2076 12.6463 7.98837 13.427L12.8787 18.3174C13.2693 18.7079 13.9024 18.7079 14.293 18.3174C14.6835 17.9269 14.6835 17.2937 14.293 16.9032L10.1073 12.7175C9.71678 12.327 9.71678 11.6939 10.1073 11.3033L14.2893 7.12129C14.6799 6.73077 14.6799 6.0976 14.2893 5.70708Z" fill="#f7f7f7"></path> </g></svg></button>
@@ -275,13 +275,13 @@
         });
 
         let lastWindowWidth = window.innerWidth;  // Guardamos el último tamaño de la ventana
-        window.addEventListener("resize", () => {
+        const cambiaImagenResponsive = ()=>{
           let windowWidth = window.innerWidth;
           // Verificamos si el ancho de la ventana ha cambiado
           if (windowWidth < 800) {
             // Si el ancho es menor a 800px y el último tamaño era mayor o igual a 800px
             glideInstance3.destroy(); 
-            const imgsCarrousel = document.querySelector(".glide__slides3");
+            let imgsCarrousel = document.querySelector(".glide__slides3");
             imgsCarrousel.innerHTML = `
               <li class="glide__slide glide__slide3"><img src="./assets/img/carrousel/mobile/Bienvenida_Mobile.jpg" alt=""></li>
               <li class="glide__slide glide__slide3"><img src="./assets/img/carrousel/mobile/Peugeot_Mobile.jpg" alt=""></li>
@@ -293,7 +293,7 @@
           } else if (windowWidth >= 800) {
             // Si el ancho es mayor o igual a 800px y el último tamaño era menor a 800px
             glideInstance3.destroy(); 
-            const imgsCarrousel = document.querySelector(".glide__slides3");
+            let imgsCarrousel = document.querySelector(".glide__slides3");
             imgsCarrousel.innerHTML = `
               <li class="glide__slide glide__slide3"><img src="./assets/img/carrousel/desktop/Bienvenida_Desktop.webp" alt=""></li>
               <li class="glide__slide glide__slide3"><img src="./assets/img/carrousel/desktop/Peugeot_Desk.webp" alt=""></li>
@@ -306,6 +306,12 @@
 
           // Actualizamos el último tamaño de la ventana
           lastWindowWidth = windowWidth;
+        }
+
+        cambiaImagenResponsive()
+
+        window.addEventListener("resize", () => {
+          cambiaImagenResponsive()
         });
 
 
