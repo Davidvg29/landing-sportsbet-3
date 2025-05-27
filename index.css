@@ -713,6 +713,47 @@ a span:nth-child(4){
 }
  /* fin dos botones */
 
+/* deja tu numero */
+ .containerDejaTuNumero{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    line-height: 1;
+    padding: 10px;
+}
+.containerDejaTuNumero .title{
+    font-size: 24px;
+    font-weight: 600;
+}
+ .containerDejaTuNumero a{
+    color: var(--color-verde);
+    font-size: 20px;
+ }
+ /* fin deja tu numero */
+
+/* video */
+ .containerVideo{
+    width: 100vw;
+    /* height: 600px; */
+    /* background-color: red; */
+    background-image: url(./assets/img/fondo-patron.webp);
+    background-size: cover;
+    margin: 10px 0px 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .containerVideo video{
+    width: 100%;
+    max-width: 350px;
+    max-height: 600px;
+    /* margin: 10px 10px 10px 10px; */
+    padding: 0 10px 0 10px;
+ }
+ /* fin video */
+
  /* media queries */
   @media (max-width: 1024px) {
     .containerCards {
