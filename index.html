@@ -56,9 +56,9 @@
       <!-- fin deja tu numero -->
 
       <!-- video -->
-       <div class="containerVideo">
+       <!-- <div class="containerVideo">
         <video id="videoInfluencer" src="" poster=""  playsinline controls></video>
-       </div>
+       </div> -->
       <!-- fin video -->
 
      <!-- carrousel -->
@@ -353,18 +353,18 @@
             linkMendoza.href = influencers[i].urlMendoza;
             const linkBuenosAires = document.querySelector("#linkBuenosAires");
             linkBuenosAires.href = influencers[i].urlBuenosAires;
-            const videoInfluencer = document.querySelector("#videoInfluencer");
-            videoInfluencer.src = influencers[i].video;
-            videoInfluencer.poster = influencers[i].portadaVideo;
+            // const videoInfluencer = document.querySelector("#videoInfluencer");
+            // videoInfluencer.src = influencers[i].video;
+            // videoInfluencer.poster = influencers[i].portadaVideo;
           }else{
             // links y video por defectos muestra el de nicolas si no existen otros inflluencers
             const linkMendoza = document.querySelector("#linkMendoza");
             linkMendoza.href = influencers[0].urlMendoza;
             const linkBuenosAires = document.querySelector("#linkBuenosAires");
             linkBuenosAires.href = influencers[0].urlBuenosAires;
-            const videoInfluencer = document.querySelector("#videoInfluencer");
-            videoInfluencer.src = `./assets/videos/${influencers[0].video}`;
-            videoInfluencer.poster = `./assets/videos/${influencers[0].portadaVideo}`;
+            // const videoInfluencer = document.querySelector("#videoInfluencer");
+            // videoInfluencer.src = `./assets/videos/${influencers[0].video}`;
+            // videoInfluencer.poster = `./assets/videos/${influencers[0].portadaVideo}`;
           }
         }
 
