@@ -566,11 +566,20 @@ header a:hover{
     height: 200px;
     margin: 80px 0 10px 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
     overflow: hidden;
     /* padding-top: 70px; */
+ }
+ .containerLinks{
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
  }
  .containerDosBotones::before {
   content: '';
