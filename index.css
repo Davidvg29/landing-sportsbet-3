@@ -836,8 +836,12 @@ a span:nth-child(4){
     color: #caf9de;
     font-size: 40px;
     font-weight: 800;
-    text-shadow: 0px 0px 20px var(--color-verde);
-    -webkit-text-stroke: 1px var(--color-verde);
+    /* text-shadow: 0px 0px 20px var(--color-verde); */
+     text-shadow:
+    -1px -1px 0 var(--color-verde), 1px -1px 0 var(--color-verde),
+    -1px  1px 0 var(--color-verde), 1px  1px 0 var(--color-verde),
+     2px  2px 8px var(--color-verde);
+    /* -webkit-text-stroke: 1px var(--color-verde); */
 }
 
 /* fin bienvenido */
