@@ -824,7 +824,7 @@ a span:nth-child(4){
 /* bienvenido */
  .containerBienvenido{
     color: white;
-    background-color: var(--color-gris);
+    background-color: var(--color-azul-oscuro);
     display: flex;
     justify-content: center;
     align-items: center;
