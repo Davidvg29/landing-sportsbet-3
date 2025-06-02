@@ -843,8 +843,69 @@ a span:nth-child(4){
      2px  2px 8px var(--color-verde);
     /* -webkit-text-stroke: 1px var(--color-verde); */
 }
-
 /* fin bienvenido */
+
+/* banner F1 */
+.bannerF1 {
+  position: relative;
+  width: 100%;
+  padding: 10px;
+  background-image: url(./assets/img/f1autos.jpeg);
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  /* min-height: 300px; Ajustalo según tu diseño */
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+}
+
+/* Capa con opacidad + blur */
+.bannerF1::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4); /* oscurece */
+  backdrop-filter: blur(1px);
+  z-index: 1;
+  text-align: center;
+}
+
+.imgF1 {
+  /* position: relative; */
+  z-index: 2;
+}
+
+.imgF1 img {
+  width: 130px;
+  /* padding-left: 40px; */
+}
+
+
+.textF1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2; /* Asegura que esté encima del blur */
+
+}
+
+.textF1 p {
+  color: white;
+  font-weight: 600;
+  line-height: 1;
+  margin: 0.5rem 0;
+  align-items: center;
+  text-align: center;
+}
+.textF1 p b{
+    color: var(--color-verde);
+}
+
+/* fin banner F1 */
 
  /* media queries */
   @media (max-width: 1024px) {
