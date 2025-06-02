@@ -67,14 +67,14 @@
      <!-- fin dos botones -->
 
       <!-- banner F1 -->
-      <div class="bannerF1">
-        <!--<div class="imgF1"><img src="./assets/logos/f1.png" alt=""></div>-->
+      <!-- <div class="bannerF1">
+        <div class="imgF1"><img src="./assets/logos/f1.png" alt=""></div>
         <div class="textF1">
           <p>¡<b>Apostá</b> como un campeón!</p>
           <p><b>Fácil</b>, <b>rápido</b> y las <b>mejores</b> probabilidades.</p>
           <p><b>$12.000</b> promo bienvenida</p>
         </div>
-      </div>
+      </div> -->
     <!-- fin banner F1 -->
 
      <!-- deja tu numero -->
@@ -91,9 +91,9 @@
           <div class="glide3">
             <div class="glide__track glide__track3" data-glide-el="track">
                 <ul class="glide__slides glide__slides3">
+                  <li class="glide__slide glide__slide3"><img src="./assets/img/carrousel/mobile/SPORTSBET-JUGA-Y-GANA-LANDING-MOBILE.jpg" alt=""></li>
                       <li class="glide__slide glide__slide3"><img src="./assets/img/carrousel/mobile/Bienvenida_Mobile.jpg" alt=""></li>
               <li class="glide__slide glide__slide3"><img src="./assets/img/carrousel/mobile/Peugeot_Mobile.jpg" alt=""></li>
-              <li class="glide__slide glide__slide3"><img src="./assets/img/carrousel/mobile/SPORTSBET-JUGA-Y-GANA-LANDING-MOBILE.jpg" alt=""></li>
               <li class="glide__slide glide__slide3"><img src="./assets/img/carrousel/mobile/SPORTSBET-WSP-HABILITADO-LANDING-MOBILE.jpg" alt=""></li>
               <li class="glide__slide glide__slide3"><img src="./assets/img/carrousel/mobile/TV_Mobile.jpg" alt=""></li>
                 </ul>
@@ -295,7 +295,7 @@
         const config3 = {
             type: "carousel",
             perView: 1,
-            autoplay: 1500,
+            // autoplay: 1500,
             hoverpause: true,
         }
         let glideInstance3 = new Glide('.glide3', config3).mount()
@@ -315,9 +315,9 @@
             glideInstance3.destroy(); 
             let imgsCarrousel = document.querySelector(".glide__slides3");
             imgsCarrousel.innerHTML = `
+            <li class="glide__slide glide__slide3"><img src="./assets/img/carrousel/mobile/SPORTSBET-JUGA-Y-GANA-LANDING-MOBILE.jpg" alt=""></li>
               <li class="glide__slide glide__slide3"><img src="./assets/img/carrousel/mobile/Bienvenida_Mobile.jpg" alt=""></li>
               <li class="glide__slide glide__slide3"><img src="./assets/img/carrousel/mobile/Peugeot_Mobile.jpg" alt=""></li>
-              <li class="glide__slide glide__slide3"><img src="./assets/img/carrousel/mobile/SPORTSBET-JUGA-Y-GANA-LANDING-MOBILE.jpg" alt=""></li>
               <li class="glide__slide glide__slide3"><img src="./assets/img/carrousel/mobile/SPORTSBET-WSP-HABILITADO-LANDING-MOBILE.jpg" alt=""></li>
               <li class="glide__slide glide__slide3"><img src="./assets/img/carrousel/mobile/TV_Mobile.jpg" alt=""></li>
             `;
@@ -327,9 +327,9 @@
             glideInstance3.destroy(); 
             let imgsCarrousel = document.querySelector(".glide__slides3");
             imgsCarrousel.innerHTML = `
+            <li class="glide__slide glide__slide3"><img src="./assets/img/carrousel/desktop/SPORTSBET-JUGA-Y-GANA-LANDING-DESKTOP-1.jpg" alt=""></li>
               <li class="glide__slide glide__slide3"><img src="./assets/img/carrousel/desktop/Bienvenida_Desktop.webp" alt=""></li>
               <li class="glide__slide glide__slide3"><img src="./assets/img/carrousel/desktop/Peugeot_Desk.webp" alt=""></li>
-              <li class="glide__slide glide__slide3"><img src="./assets/img/carrousel/desktop/SPORTSBET-JUGA-Y-GANA-LANDING-DESKTOP-1.jpg" alt=""></li>
               <li class="glide__slide glide__slide3"><img src="./assets/img/carrousel/desktop/SPORTSBET-WSP-HABILITADO-LANDING-DESKTOP.webp" alt=""></li>
               <li class="glide__slide glide__slide3"><img src="./assets/img/carrousel/desktop/TV_Desktop.webp" alt=""></li>
             `;
