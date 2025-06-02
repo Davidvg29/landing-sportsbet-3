@@ -1038,8 +1038,11 @@ filter: drop-shadow(3px -3px 5px #0b512a); /* Sombra verde */
         margin: 0 5% 0 5%;
     }
     .textF1 p {
-  font-size: 14px;
-}
+        font-size: 14px;
+    }
+    .bannerF1 {
+        overflow: hidden;
+    }
   }
 
   @media (max-width: 370px) {
