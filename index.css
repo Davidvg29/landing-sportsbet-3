@@ -829,6 +829,7 @@ a span:nth-child(4){
     justify-content: center;
     align-items: center;
     padding: 20px 0 20px 0;
+    text-align: center;
  }
  .containerBienvenido span{
     /* margin: 5px; */
